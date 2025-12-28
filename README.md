@@ -70,7 +70,7 @@ cp config.h.example config.h
 
 ## MQTT Messages
 
-**Topic:** `button-pressed`  
+**Topic:** `button-pressed`
 **Payload:** `red`, `blue`, `green`, or `yellow`
 
 ## Architecture
@@ -80,7 +80,7 @@ This controller is part of a larger IoT system:
 ```
 NodeMCU (Publisher)
    ↓ MQTT
-HashiCorp Cluster (MQTT Broker via Nomad)
+ (MQTT Broker)
    ↓ MQTT
 Pi Zero W (Subscriber - LED Strip + Audio)
 ```
